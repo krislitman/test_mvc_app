@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ut4MMWMwVCdQM0F4qub+HX0OrPLbAkKjwRS7XNRDyMGYLKEzVOnEoutNuwXA6BDHfotqulizfAFlfHdw1fks7g==",
+  "dgSpecHash": "sgATpsOR8aFmREQLxTePLzoP41l6k78F2ukjkLgBxR7cqwhPlLR86UuTQ18PKEHOXuDcHnOeusw/1SCD9zLFmA==",
   "success": true,
   "projectFilePath": "/Users/krislitman/Code_Practice/C#/test_mvc_app/test_mvc_app.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/krislitman/.nuget/packages/dotenv.core/2.0.1/dotenv.core.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

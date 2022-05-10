@@ -1,11 +1,40 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DotEnv.Core/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/DotEnv.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotEnv.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DotEnv.Core/2.0.1": {
+      "sha512": "95SMP0KgwaKn9Ho70BBHVP0SJpK1CbJHdPTq6Tozkv2KjLjAJPVBe7LzQZVW8g7+xUP+faDSAkPN77la7Ug/kg==",
+      "type": "package",
+      "path": "dotenv.core/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "dotenv-icon-nuget.png",
+        "dotenv.core.2.0.1.nupkg.sha512",
+        "dotenv.core.nuspec",
+        "lib/netstandard2.0/DotEnv.Core.dll",
+        "lib/netstandard2.0/DotEnv.Core.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DotEnv.Core >= 2.0.1"
+    ]
   },
   "packageFolders": {
     "/Users/krislitman/.nuget/packages/": {}
@@ -43,6 +72,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "DotEnv.Core": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
