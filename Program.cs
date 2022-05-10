@@ -1,3 +1,10 @@
+using DotEnv.Core;
+
+new EnvLoader().Load();
+
+string Domain = EnvReader.Instance["Domain"];
+string ClientId = EnvReader.Instance["ClientId"];
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,7 +13,6 @@ builder.Services.AddControllersWithViews();
 
 
 var app = builder.Build();
-
 
 
 // Configure the HTTP request pipeline.
